@@ -1,11 +1,5 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "next.config.js",
-        "use": "@vercel/next"
-      }
-    ],
     "routes": [
       {
         "src": "/(.*)",
@@ -16,4 +10,7 @@
       "NEXT_PUBLIC_API_URL": "https://bti-425-server.vercel.app/api/user"
     }
   }
+  
+
+
   
