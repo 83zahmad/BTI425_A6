@@ -29,7 +29,7 @@ export default function RouteGuard({ children }) {
     } else {
       updateAtoms();
     }
-  }, [pathname, router, updateAtoms]);
+  }, [pathname]);
 
   return children;
 }
