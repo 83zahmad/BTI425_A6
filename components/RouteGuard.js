@@ -23,13 +23,13 @@ export default function RouteGuard({ children }) {
 
   useEffect(() => {
     const token = readToken();
-
+  
     if (!isAuthenticated() && !PUBLIC_PATHS.includes(pathname)) {
       router.push('/login');
     } else {
       updateAtoms();
     }
-  }, [pathname]);
+  }, [pathname, router, updateAtoms]);
 
   return children;
 }
